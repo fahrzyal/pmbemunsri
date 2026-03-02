@@ -75,7 +75,7 @@ return (
                         className="text-[11px] font-black text-slate-900 dark:text-[#D4E94E] hover:underline flex items-center gap-1">
                         VIEW DETAILS
                         </a>
-                        <FiArrowUpRight />
+                        <FiArrowUpRight className="text-slate-900 dark:text-[#D4E94E]"/>
                     </div>
                 </div>
             ))}
