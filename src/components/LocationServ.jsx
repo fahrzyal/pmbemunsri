@@ -5,7 +5,7 @@ const LocationServ = () => {
     <div>
         <div>
             {/* Lokasi Pengabdian */}
-            <div className="lokasi-pengabdian w-screen h-fit md:h-screen pt-10 md:pt-28 px-10 md:px-30">
+            <div className="lokasi-pengabdian w-screen h-fit md:h-screen pt-36 md:pt-28 px-10 md:px-30">
                 <div data-aos="zoom-in" className="box-1-lokasi flex flex-col justify-center items-center w-full h-fit">
                     <div className="flex justify-center gap-1 transition-transform duration-500 hover:scale-103">
                         <div className="h-1.5 w-2 mb-3 bg-green-500 mt-2 rounded-full"></div>
