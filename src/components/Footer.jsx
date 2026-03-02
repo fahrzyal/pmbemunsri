@@ -11,7 +11,7 @@ const Footer = () => {
             <div className="box-footer-1 flex flex-col px-10 md:px-30 md:py-5 w-full">
                 <div className="flex flex-col gap-5 md:flex-row justify-between items-center">
                     <div className="hidden md:flex flex-col md:flex-row justify-center items-center w-full md:w-fit h-fit">
-                        <img src="public/assets/logo-pmbemunsri.webp" loading="lazy" alt="Logo PM BEM 2025" className="w-40"/>
+                        <img src="/public/assets/logo-pmbemunsri.webp" loading="lazy" alt="Logo PM BEM 2025" className="w-40"/>
                         <h1 className="font-extrabold text-center md:text-left text-2xl text-primary-text dark:text-white"><span className="text-secondary-text">PM BEM </span>UNSRI <br /><span className="italic">2025</span></h1>
                     </div>
                     <div className="hidden md:flex flex-col items-center text-primary-text dark:text-white">

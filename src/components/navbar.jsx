@@ -38,7 +38,7 @@ const Navbar = ({ toggleDarkMode, isDarkMode }) => {
             <div className="container bg-white/45 backdrop-blur-[15px] border border-white shadow-[1px_1px_15px_rgba(0,0,0,0.25)] dark:shadow-[1px_1px_15px_rgba(255,255,255,0.5)] max-w-[85%] my-4 p-2 rounded-[20px]">
                 <div className="navbar-box flex items-center justify-between px-5 text-primary-text">
                     <div className="logo flex items-center gap-3">
-                        <img src="public/assets/logo-pmbemunsri.webp" alt="Logo PM BEM 2025" className="w-16 h-16"/>
+                        <img src="/public/assets/logo-pmbemunsri.webp" alt="Logo PM BEM 2025" className="w-16 h-16"/>
                         <h1 className="text-[18px] font-bold leading-5">PM BEM 2025 <br /> 
                             <span className="hidden lg:block font-normal">Universitas Sriwijaya</span>
                         </h1>
