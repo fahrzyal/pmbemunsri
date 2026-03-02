@@ -50,7 +50,7 @@ const Galeripage = () => {
         <div>
         <section data-aos="fade-down" className="relative w-full h-fit dark:bg-primary-dark pt-32 px-10 md:px-30 transition-colors duration-300">
             {/* Header Galeri */}
-            <div className="flex flex-col justify-center items-center mb-5 w-full h-fit text-center">
+            <div className="flex flex-col justify-center items-center w-full h-fit text-center">
                 <img src="/assets/galeri.svg" alt="" className="w-xs md:w-md" />
                 <div className="flex justify-center gap-1 transition-transform duration-500 hover:scale-105">
                     <div className="h-1.5 w-2 mb-3 bg-green-500 mt-2 rounded-full"></div>
@@ -128,7 +128,7 @@ const Galeripage = () => {
                     className="fixed inset-0 z-9999 bg-white/45 backdrop-blur-[5px] flex flex-col items-center justify-center p-6"
                     onClick={() => setSelectedImg(null)}
                 >
-                    <button className="absolute top-10 right-10 text-white text-5xl hover:rotate-90 hover:text-[#D4E94E] transition-all duration-300 cursor-pointer">
+                    <button className="absolute top-10 right-10 text-primary-text text-5xl hover:rotate-90 transition-all duration-300 cursor-pointer">
                         <IoCloseCircle />
                     </button>
                     <div className="relative w-full h-full max-w-5xl flex flex-col items-center justify-center gap-6">
@@ -138,7 +138,7 @@ const Galeripage = () => {
                             className="max-w-full max-h-[75vh] object-contain rounded-3xl border border-white/10 shadow-2xl"
                         />
                         <div className="text-center">
-                            <span className="text-[#D4E94E] text-xs font-black uppercase tracking-[0.4em]">{selectedImg.category}</span>
+                            <span className="text-secondary-text text-xs font-black uppercase tracking-[0.4em]">{selectedImg.category}</span>
                         </div>
                     </div>
                 </div>

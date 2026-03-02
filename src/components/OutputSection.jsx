@@ -42,8 +42,9 @@ return (
             
             {(activeTab === 'artikel' || activeTab === 'program') && outputData[activeTab].map((item) => (
                 <div 
-                    key={item.id} 
-                    className="flex flex-col bg-white/45 backdrop-blur-[15px] border border-white shadow-[1px_1px_15px_rgba(0,0,0,0.20)] dark:shadow-[1px_1px_15px_rgba(255,255,255,0.3)] rounded-2xl transition-all duration-300 overflow-hidden hover:scale-103"
+                    key={item.id}
+                    
+                    className="flex flex-col bg-white/45 backdrop-blur-[15px] border border-white shadow-[1px_1px_15px_rgba(0,0,0,0.20)] dark:shadow-[1px_1px_15px_rgba(255,255,255,0.3)] rounded-2xl transition-all duration-500 overflow-hidden hover:scale-103"
                 >
                     {/* Card Header */}
                     <div className="px-4 py-2 border-b border-gray-300 dark:border-white/30">
@@ -53,7 +54,7 @@ return (
                     </div>
 
                     <div className="flex justify-center pt-3 w-full h-30 overflow-hidden">
-                    <img src={item.image} alt="" className="w-full" />
+                        <img src={item.image} alt="" className="w-full" />
                     </div>
 
                     {/* Card Body */}
@@ -66,16 +67,16 @@ return (
                         </p>
                     </div>
 
-                {/* Card Footer */}
-                <div className="px-4 py-3 flex items-center">
-                    <a href={item.url}
-                    target="_blank"      
-                    rel="noreferrer"     
-                    className="text-[11px] font-black text-slate-900 dark:text-[#D4E94E] hover:underline flex items-center gap-1">
-                    VIEW DETAILS
-                    </a>
-                    <FiArrowUpRight />
-                </div>
+                    {/* Card Footer */}
+                    <div className="px-4 py-3 flex items-center">
+                        <a href={item.url}
+                        target="_blank"      
+                        rel="noreferrer"     
+                        className="text-[11px] font-black text-slate-900 dark:text-[#D4E94E] hover:underline flex items-center gap-1">
+                        VIEW DETAILS
+                        </a>
+                        <FiArrowUpRight />
+                    </div>
                 </div>
             ))}
 

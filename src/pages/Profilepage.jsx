@@ -143,7 +143,7 @@ const Profilepage = () => {
                             href={`https://instagram.com/${selectedMember.ig.replace('@', '')}`}
                             target="_blank"
                             rel="noreferrer"
-                            className="flex items-center justify-center gap-2 w-full py-5 bg-linear-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] text-white dark:bg-[#D4E94E] text-white dark:text-slate-900 rounded-3xl font-black uppercase tracking-widest hover:scale-105 transition-all shadow-xl shadow-[#D4E94E]/10"
+                            className="flex items-center justify-center gap-2 w-full py-5 bg-linear-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] text-white dark:bg-[#D4E94E] dark:text-slate-900 rounded-3xl font-black uppercase tracking-widest hover:scale-105 transition-all shadow-xl shadow-[#D4E94E]/10"
                         >
                             <IoLogoInstagram size={22} />
                             Instagram
