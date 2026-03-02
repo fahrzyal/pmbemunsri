@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { outputData } from './OutputData';
+import { FiArrowUpRight } from "react-icons/fi";
 
 const OutputSection = () => {
 const [activeTab, setActiveTab] = useState('artikel');
@@ -66,13 +67,14 @@ return (
                     </div>
 
                 {/* Card Footer */}
-                <div className="px-4 py-3">
+                <div className="px-4 py-3 flex items-center">
                     <a href={item.url}
                     target="_blank"      
                     rel="noreferrer"     
                     className="text-[11px] font-black text-slate-900 dark:text-[#D4E94E] hover:underline flex items-center gap-1">
-                    VIEW DETAILS ↗
+                    VIEW DETAILS
                     </a>
+                    <FiArrowUpRight />
                 </div>
                 </div>
             ))}
