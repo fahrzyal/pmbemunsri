@@ -5,7 +5,7 @@ const Shortstory = () => {
     <div>
     <div>
         <secion className="container mx-auto relative z-10 flex flex-col items-center w-screen h-fit md:h-screen pt-10 px-10 md:px-30">
-            <div className="">
+            <div data-aos="zoom-in" className="">
                 <div className="flex justify-center gap-1 w-full transition-transform duration-500 hover:scale-103">
                     <div className="h-1.5 w-2 mb-3 bg-green-500 mt-2 rounded-full"></div>
                     <div className="h-1.5 w-7 mb-3 bg-green-500 mt-2 rounded-full"></div> 
@@ -17,7 +17,7 @@ const Shortstory = () => {
             <img src="/assets/element-blurr.webp" alt="" loading="lazy" className="hidden md:block absolute left-60 md:left-50 mt-165 md:mt-120 w-20 animate-spin [animation-direction:reverse] [animation-duration:30s] origin-center" />
 
             {/* 1. VIDEO PLAYER (Sekarang di Atas) */}
-            <div className="w-full md:px-30">
+            <div data-aos="fade-up" className="w-full md:px-30">
                 <div className="w-full md:h-105 mb-7 p-2 bg-white/45 backdrop-blur-[15px] border border-white shadow-[1px_1px_15px_rgba(0,0,0,0.25)] dark:shadow-[1px_1px_15px_rgba(255,255,255,0.5)] rounded-3xl"> 
                     {/* Frame Video: Tinggi dibatasi agar header di bawah tetap terlihat */}
                     <div className="relative aspect-video w-full h-full mx-auto rounded-2xl overflow-hidden bg-black shadow-2xl border-2 border-slate-100 dark:border-slate-800">
@@ -34,7 +34,7 @@ const Shortstory = () => {
 
             {/* 2. HEADER: Judul & Subjudul (Sekarang di Bawah) */}
             {/* Header Output */}
-            <div className="flex flex-col justify-center w-full">
+            <div data-aos="fade-up" className="flex flex-col justify-center w-full">
                 <p className="w-full text-center text-sm md:text-xl text-primary-text dark:text-white transition-transform duration-500 hover:scale-103">"Melihat lebih dekat bagaimana ide-ide kreatif bertransformasi menjadi solusi nyata <br />
                     yang menyentuh hati masyarakat."</p>
             </div>

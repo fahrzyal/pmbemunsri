@@ -3,10 +3,11 @@ import React from 'react';
 // React Icon
 import { FiInstagram } from "react-icons/fi";
 import { BiLogoTiktok } from "react-icons/bi";
+import { MdOutlineMail } from "react-icons/md";
 
 const Footer = () => {
     return (
-        <footer className="w-full h-fit shadow-[1px_1px_15px_rgba(0,0,0,0.25)] border border-white dark:border-slate-800 dark:bg-primary-dark">
+        <footer data-aos="fade-up" className="w-full h-fit shadow-[1px_1px_15px_rgba(0,0,0,0.25)] border border-white dark:border-slate-800 dark:bg-primary-dark">
             <div className="box-footer-1 flex flex-col px-10 md:px-30 md:py-5 w-full">
                 <div className="flex flex-col gap-5 md:flex-row justify-between items-center">
                     <div className="hidden md:flex flex-col md:flex-row justify-center items-center w-full md:w-fit h-fit">
@@ -21,7 +22,11 @@ const Footer = () => {
                         </div>
                         <div className="flex items-center gap-1 font-semibold">
                             <BiLogoTiktok className="text-xl"/>
-                            <a href="" className="text-lg">@pmbem_unsri</a>
+                            <a href="" className="text-lg">@pm_bemunsri</a>
+                        </div>
+                        <div className="flex items-center gap-1 font-semibold">
+                            <MdOutlineMail className="text-xl"/>
+                            <a href="" className="text-lg">pmbemunsri@gmail.com</a>
                         </div>
                     </div>
                     <div className="text-center md:text-right">

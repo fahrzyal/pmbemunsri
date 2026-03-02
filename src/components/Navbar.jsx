@@ -11,7 +11,7 @@ import { GiCoffeeBeans } from "react-icons/gi";
 const Navbar = ({ toggleDarkMode, isDarkMode }) => {
     const linkStyle = ({ isActive }) => 
         isActive 
-        ? "text-secondary-text font-semibold hover:text-secondary-text  transition-transform duration-300"
+        ? "md:text-secondary-text font-semibold hover:text-secondary-text transition-transform duration-300"
         : "font-medium hover:text-secondary-text hover:font-semibold transition-transform duration-300";
 
     // TODO: handle click for mobile menu
@@ -103,11 +103,11 @@ const Navbar = ({ toggleDarkMode, isDarkMode }) => {
                             `}>
                                 <li className="flex flex-row items-center gap-2 font-normal text-base">
                                     <GiCoffeeBeans />
-                                    <NavLink to="/homedrycoffee">Home Dry Coffee</NavLink>
+                                    <NavLink to="/home-dry-coffee">Home Dry Coffee</NavLink>
                                 </li>
                                 <li className="flex flex-row gap-2 font-normal text-base">
                                     <MdOutlineRecycling className="mt-1"/>
-                                    <NavLink to="">Pengolahan Limbah <br />Kopi</NavLink>
+                                    <NavLink to="/pengolahan-limbah">Pengolahan Limbah <br />Kopi</NavLink>
                                 </li>
                             </ul>
                         </li>
@@ -116,6 +116,7 @@ const Navbar = ({ toggleDarkMode, isDarkMode }) => {
                             <NavLink to="/gallery" className="md:px-6 md:py-3 rounded-[25px] md:bg-linear-to-r from-[#22C55E] to-[#4ADE80] hover:from-[#16A34A] hover:to-[#22C55E] text-white transition-all duration-500 hover:scale-105">Gallery</NavLink>
                         </li>
                     </ul>
+                    
                     <div className="dark-mode flex justify-center items-center">
                         <button onClick={toggleDarkMode} className="flex mx-3 p-4 rounded-full bg-primary-text dark:bg-[#D4E94E] text-white dark:text-primary-text cursor-pointer transition-transform duration-500 hover:scale-105">
                                 {isDarkMode ? <FiSun /> : <PiMoonStars />}

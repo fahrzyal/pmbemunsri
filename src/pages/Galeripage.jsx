@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 // 1. TAMBAHKAN IMPORT ICON YANG KURANG
-import { IoCloseOutline, IoChevronDownOutline, IoChevronUpOutline } from "react-icons/io5";
+import { IoCloseCircle, IoArrowDownCircle, IoArrowUpCircle } from "react-icons/io5";
 
 const Galeripage = () => {
     const categories = ["Daily", "Serah Terima", "Monev Internal", "Monev Kementrian", "Rumah Pengeringan"];
@@ -47,34 +47,39 @@ const Galeripage = () => {
     };
 
     return (
-        <section className="relative w-full min-h-screen dark:bg-primary-dark py-32 px-6 md:px-30">
+        <div>
+        <section data-aos="fade-down" className="relative w-full h-fit dark:bg-primary-dark pt-32 px-10 md:px-30 transition-colors duration-300">
             {/* Header Galeri */}
-            <div className="box-1-lokasi flex flex-col justify-center items-center mb-5 w-full h-fit text-center">
+            <div className="flex flex-col justify-center items-center mb-5 w-full h-fit text-center">
+                <img src="/assets/galeri.svg" alt="" className="w-xs md:w-md" />
                 <div className="flex justify-center gap-1 transition-transform duration-500 hover:scale-105">
                     <div className="h-1.5 w-2 mb-3 bg-green-500 mt-2 rounded-full"></div>
                     <div className="h-1.5 w-7 mb-3 bg-green-500 mt-2 rounded-full"></div> 
                 </div>
                 <h1 className="mb-5 font-black text-primary-text dark:text-white text-4xl md:text-5xl uppercase">
-                    ACTIVITY <span className="text-secondary-text">GALLERY</span>
+                    ACTIVITY <span className="text-secondary-text italic">GALLERY</span>
                 </h1>
                 <p className="mb-3 text-sm md:text-xl text-primary-text dark:text-white ">
-                    "Dokumentasi visual kegiatan pengabdian masyarakat sebagai wujud nyata kontribusi <br className="hidden md:block" /> dan keterlibatan kami di wilayah sasaran"
+                    "Mari lihat, Dokumentasi visual kegiatan pengabdian masyarakat sebagai wujud nyata kontribusi <br className="hidden md:block" /> dan keterlibatan kami di wilayah sasaran"
                 </p>
+                <a target='' href="#content-galeri" className="text-[#D4E94E]"><IoArrowDownCircle className="mt-7 text-7xl animate-bounce" /></a>
                 <div className="h-1.5 w-3 mb-3 bg-[#D4E94E] mt-2 rounded-full"></div>
 
-                <img src="/assets/element-blurr.webp" alt="" loading="lazy" className="absolute left-85 md:left-70 mt-35 md:-mt-20 w-10 md:w-15 animate-spin [animation-duration:70s] origin-center" />
-                <img src="/assets/element-blurr.webp" alt="" loading="lazy" className="absolute left-0 md:left-300 -mt-50 md:mt-30 w-15 md:w-20 animate-spin [animation-duration:70s] origin-center" />
+                <img src="/assets/element-blurr.webp" alt="" loading="lazy" className="hidden md:block absolute left-85 md:left-100 mt-35 md:-mt-130 w-10 md:w-15 animate-spin [animation-duration:30s] origin-center" />
+                <img src="/assets/element-blurr.webp" alt="" loading="lazy" className="hidden md:block absolute left-0 md:left-270 -mt-50 md:mt-25 w-15 md:w-20 animate-spin [animation-duration:40s] origin-center" />
             </div>
-
+        </section>
+        <section className="relative w-full min-h-screen dark:bg-primary-dark pb-20 px-6 md:px-30 transition-colors duration-300">
+            <div id='content-galeri' className="pt-10 md:pt-30">
             {/* Switch Kategori */}
-            <div className="flex flex-wrap justify-center items-center gap-3 mb-10">
+            <div data-aos="fade-down" className="flex flex-wrap justify-center items-center gap-3 mb-10">
                 {categories.map((cat) => (
                     <button
                         key={cat}
                         onClick={() => handleCategoryChange(cat)}
-                        className={`px-3 md:px-8 py-3 rounded-xl text-[10px] md:text-xs font-black uppercase tracking-widest transition-all duration-500 border-2 
+                        className={`px-3 md:px-8 py-3 rounded-xl text-[10px] md:text-xs font-black uppercase tracking-widest transition-all duration-500 border-2 cursor-pointer
                         ${activeCategory === cat 
-                            ? "bg-linear-to-r from-[#22C55E] to-[#4ADE80] border-white text-primary-text shadow-xl shadow-secondary-text/20 scale-105" 
+                            ? "bg-linear-to-r from-[#22C55E] to-[#4ADE80] border-white text-white shadow-xl shadow-secondary-text/20 scale-110" 
                             : "border-slate-100 dark:border-slate-800 text-slate-400 hover:border-secondary-text hover:text-secondary-text"}`}
                     >
                         {cat}
@@ -83,7 +88,7 @@ const Galeripage = () => {
             </div>
 
             {/* GRID 3 KOLOM */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full mx-auto">
+            <div data-aos="fade-up" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full mx-auto">
                 {displayedImages.map((item) => (
                     <div 
                         key={item.id}
@@ -103,15 +108,15 @@ const Galeripage = () => {
 
             {/* TOMBOL SHOW MORE */}
             {filteredImages.length > 6 && (
-                <div className="flex justify-center mt-12">
+                <div data-aos="fade-left" className="flex justify-center mt-12">
                     <button 
                         onClick={() => setShowAll(!showAll)}
-                        className="flex items-center gap-2 px-5 py-4 text-sm bg-white/45 backdrop-blur-[15px] border border-white dark:border-white/10 shadow-[1px_1px_15px_rgba(0,0,0,0.25)] dark:shadow-[1px_1px_15px_rgba(255,255,255,0.3)] text-primary-text dark:text-white font-bold tracking-widest rounded-2xl transition-all duration-300 cursor-pointer"
+                        className="flex items-center gap-2 px-5 py-4 text-sm bg-linear-to-r from-[#22C55E] to-[#4ADE80] hover:from-[#16A34A] hover:to-[#22C55E] text-white font-bold tracking-widest rounded-full transition-all duration-300 cursor-pointer"
                     >
                         {showAll ? (
-                            <>Sembunyikan <IoChevronUpOutline className="text-xl" /></>
+                            <>Sembunyikan <IoArrowUpCircle className="text-xl" /></>
                         ) : (
-                            <>Lihat Foto Lainnya ({filteredImages.length - 6}+) <IoChevronDownOutline className="text-xl" /></>
+                            <>Lihat Foto Lainnya ({filteredImages.length - 6}+) <IoArrowDownCircle className="text-xl" /></>
                         )}
                     </button>
                 </div>
@@ -120,11 +125,11 @@ const Galeripage = () => {
             {/* MODAL LIGHTBOX */}
             {selectedImg && (
                 <div 
-                    className="fixed inset-0 z-9999 bg-slate-950/98 backdrop-blur-xl flex flex-col items-center justify-center p-6"
+                    className="fixed inset-0 z-9999 bg-white/45 backdrop-blur-[5px] flex flex-col items-center justify-center p-6"
                     onClick={() => setSelectedImg(null)}
                 >
-                    <button className="absolute top-10 right-10 text-white text-5xl hover:rotate-90 hover:text-[#D4E94E] transition-all duration-300">
-                        <IoCloseOutline />
+                    <button className="absolute top-10 right-10 text-white text-5xl hover:rotate-90 hover:text-[#D4E94E] transition-all duration-300 cursor-pointer">
+                        <IoCloseCircle />
                     </button>
                     <div className="relative w-full h-full max-w-5xl flex flex-col items-center justify-center gap-6">
                         <img 
@@ -138,7 +143,9 @@ const Galeripage = () => {
                     </div>
                 </div>
             )}
+            </div>
         </section>
+        </div>
     );
 };
 

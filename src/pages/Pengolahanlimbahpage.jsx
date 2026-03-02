@@ -1,28 +1,28 @@
 import React, { useEffect } from 'react';
 import { IoArrowBackCircle } from "react-icons/io5";
 
-const Homedry = () => {
+const Pengolahanlimbah = () => {
 useEffect(() => {
     window.scrollTo(0, 0);
 }, []);
 
 const data = {
-    title: "Inovasi Home Dry Coffee: Solusi Strategis Petani Kopi Lahat Hadapi Cuaca Buruk",
+    title: "Pengolahan Limbah: Inovasi yang Janjikan Peluang Ekonomi Bagi Warga",
     category: "Program Kerja",
-    date: "29 Oktober 2025",
+    date: "30 Oktober 2025",
     author: "PM BEM UNSRI",
-    mainImage: "/assets/Proker/1.webp",
+    mainImage: "/assets/Proker/4.webp",
     content: [
     {
         id: 1,
-        image: "/assets/Proker/2.webp",
+        image: "/assets/Proker/5.webp",
         text: 
-        "Pada 29 Oktober 2025, tim pelaksana program pemberdayaan masyarakat resmi memulai pembangunan rumah pengeringan kopi. Kegiatan ini dilatarbelakangi oleh kebutuhan petani akan fasilitas pascapanen yang lebih efektif, terutama untuk menjaga kualitas dan nilai jual biji kopi. Proyek yang berlangsung hingga 22 Desember 2025 ini menjadi langkah konkret dalam meningkatkan kapasitas pengolahan hasil perkebunan di desa tersebut."
+        "Pada 30 Oktober 2025, program pembangunan tempat pengolahan limbah resmi dimulai sebagai upaya meningkatkan kebersihan lingkungan dan pengelolaan limbah. Selama ini, masyarakat menghadapi persoalan penumpukan sampah dan limbah rumah tangga yang belum tertangani secara sistematis. Program yang berlangsung hingga 10 Desember 2025 ini diharapkan dapat menjadi solusi jangka panjang bagi permasalahan lingkungan lokal. Dalam sepuluh hari pelaksanaan, tim teknis dan masyarakat bersama-sama membangun fasilitas tempat pengolahan limbah organik menjadi pupuk cair. Konsultasi dengan aparat desa dan tokoh masyarakat dilakukan untuk memastikan lokasi, desain, serta mekanisme operasional sesuai kebutuhan warga. Proses edukasi mengenai pemilahan sampah juga disisipkan selama kegiatan berlangsung."
     },
     {
         id: 2,
-        image: "/assets/Proker/3.webp",
-        text: "Selama proses pembangunan, tim bersama warga bekerja menyiapkan struktur bangunan, rangka atap, sistem ventilasi, dan penutup transparan yang memungkinkan proses pengeringan berlangsung optimal. Setiap tahapan dikerjakan secara gotong royong, sekaligus menjadi sarana transfer ilmu mengenai teknik pengeringan yang tepat. Kehadiran alat ukur kelembapan dan sistem sirkulasi udara sederhana juga mulai diperkenalkan untuk menunjang kualitas hasil. Dengan berdirinya rumah pengeringan kopi ini, diharapkan para petani dapat menikmati proses pengeringan yang lebih higienis, cepat, dan tidak lagi bergantung sepenuhnya pada cuaca. Pengurangan kadar air secara merata akan meningkatkan mutu biji kopi, sehingga harga jual di pasaran dapat lebih stabil dan menguntungkan. Selain itu, fasilitas ini diharapkan menjadi titik awal terbentuknya ekosistem pengolahan kopi yang lebih modern dan berkelanjutan. Usai masa pembangunan, evaluasi awal menunjukkan bahwa partisipasi masyarakat sangat baik, meski terdapat beberapa kendala kecil seperti keterbatasan alat dan kondisi cuaca pada hari-hari tertentu. Namun secara keseluruhan, target waktu dapat dicapai dan struktur bangunan berdiri kokoh."
+        image: "/assets/Proker/6.webp",
+        text: "Kehadiran tempat pengolahan limbah ini diharapkan dapat mengurangi pencemaran lingkungan, meningkatkan kesadaran masyarakat dalam pengelolaan sampah, serta menumbuhkan budaya hidup bersih dan berkelanjutan. Pengolahan limbah organik menjadi pupuk juga memberi peluang ekonomi baru bagi warga, terutama bagi kelompok tani yang membutuhkan pupuk tambahan. Dengan adanya fasilitas ini, kampung diharapkan dapat menjadi contoh pengelolaan lingkungan yang mandiri. Setelah pembangunan selesai, evaluasi awal menunjukkan bahwa fasilitas telah berdiri sesuai rencana, meski masih perlu penyempurnaan pada sistem drainase dan papan informasi bagi pengguna. Tingkat antusiasme warga cukup tinggi, namun keberhasilan jangka panjang sangat bergantung pada kedisiplinan pemanfaatan fasilitas ini."
     }
     ]
 };
@@ -96,7 +96,7 @@ return (
             <div data-aos="zoom-in" className="md:p-12 text-center bg-slate-50 dark:bg-slate-900/50 p-8 rounded-3xl border border-white dark:border-slate-800 ">
                 <h4 className="text-xl font-black text-slate-900 dark:text-white mb-4 uppercase italic">OUR WISH</h4>
                 <p className="text-slate-600 dark:text-slate-400 leading-relaxed italic max-w-2xl mx-auto">
-                    "Untuk jangka panjang, diperlukan pelatihan lanjutan mengenai teknik pengeringan dan pemeliharaan fasilitas agar rumah pengering tetap berfungsi optimal."
+                    " Ke depan, perlu adanya jadwal pengawasan rutin serta pembentukan tim pengelola agar tempat pengolahan limbah ini dapat berfungsi secara optimal.  "
                 </p>
             </div>
 
@@ -115,4 +115,4 @@ return (
 );
 };
 
-export default Homedry;
+export default Pengolahanlimbah;
