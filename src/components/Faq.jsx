@@ -57,7 +57,7 @@ const Faq = () => {
                     {/* Question Header */}
                     <button 
                     onClick={() => toggleFaq(index)}
-                    className="w-full flex items-center justify-between p-6 text-left transition-all"
+                    className="w-full flex items-center justify-between p-6 text-left transition-all cursor-pointer"
                     >
                     <span className={`text-sm md:text-md font-extrabold tracking-tight transition-colors duration-300 ${openIndex === index ? 'text-secondary-text dark:text-[#D4E94E]' : 'text-primary-text dark:text-white'}`}>
                         {item.question}
